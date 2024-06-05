@@ -49,7 +49,8 @@ function init(){ // 로그인 폼에 쿠키에서 가져온 아이디 입력
 
 function session_set() { //세션 저장
     let session_id = document.querySelector("#typeEmailX");
-    let session_pass = document.querySelector("#typePasswordX");
+    let session_pass = document.getElementById('typePasswordX');
+    alert("값 디버깅 :", session_pass.value);
     
     if (sessionStorage) {
         let en_text = encrypt_text(session_pass.value);
@@ -205,8 +206,9 @@ const check_input = () => {
         else
         {//아이디 체크 x
         setCookie("id", emailValue.value, 0); //날짜를 0 - 쿠키 삭제
-        session_set();
         }
+
+        session_set();
     loginForm.submit();
 
     };
