@@ -69,7 +69,7 @@ function join(){ // 회원가입
     let password = document.querySelector("#typePasswordX");
     let class_check = document.querySelector(".select form-control-lg");
 
-    form.action = "../login/join.html";
+    form.action = "../login/join_end.html";
     form.method = "get";
         
     if(f_name.value.length === 0 || l_name.value.length === 0 || email.value.length === 0 || password.value.length === 0){
