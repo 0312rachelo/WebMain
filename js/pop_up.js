@@ -55,6 +55,9 @@ function over(obj) {
 function out(obj) {
     obj.src="image/LOGO_2.png";}
 
+
+
+
     function closePopup() { //체크 박스 클릭 시 윈도우를 닫는 함수, id 값이 존재할 시 클릭 이후에 쿠키를 세팅
         if (document.getElementById('check_popup').value) {
             setCookie("popupYN", "N", 1);

@@ -12,7 +12,6 @@ const check_xss = (input) => {
     // Sanitized된 값 반환
     return sanitizedInput;
     };
-
     
 function encodeByAES256(key, data){
     const cipher= CryptoJS.AES.encrypt(data, CryptoJS.enc.Utf8.parse(key), {

@@ -1,3 +1,9 @@
+function overr(obj) {
+    obj.src="image/ViX.png";}
+
+function outt(obj) {
+    obj.src="image/ViO.png";}
+
 var close_time; // 시간 정보
 var close_time2 = 50; // 페이지 닫기 시간을 50초로 설정
 
@@ -15,3 +21,4 @@ function show_time(){
 function close_window() { //함수 정의
     window.close(); // 윈도우 닫기
 }
+

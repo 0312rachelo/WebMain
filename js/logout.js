@@ -1,3 +1,5 @@
+
+
 const check_xss = (input) => {
     // DOMPurify 라이브러리 로드 (CDN 사용)
     const DOMPurify = window.DOMPurify;
@@ -12,6 +14,7 @@ const check_xss = (input) => {
     // Sanitized된 값 반환
     return sanitizedInput;
     };
+
 
 function setCookie(name, value, expiredays) {
     var date = new Date();
@@ -121,6 +124,3 @@ function init_logined(){
         alert("세션 스토리지 지원 x");
     }
 }
-
-
-    document.getElementById("logout_btn").addEventListener('click', check_input);

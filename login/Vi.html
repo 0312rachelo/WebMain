@@ -6,22 +6,22 @@
             font-size: 20pt;
             color: white;
         }
+        img {
+            margin-right: 20px;
+        }
+        
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LOL 메인화면</title>
-    <!-- Bootstrap JavaScript 파일을 포함 -->
+    <title>영웅 바이</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- 아래 수정된 부분 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qXoQeoC1brnC/dhUnLZWtk2DEpPLdQH/LQ/F+BT7iwGwI2ZAxVQMqgWHFg06ZcFD" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/test.js" defer></script>
-    <script type="text/javascript" src="js/search.js" defer></script>
-    <script type="text/javascript" src="js/pop_up.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/popup_close.js" defer></script>
     <meta name="author" content="20230069">
     <meta name="keywords" content="computer">
     <base href="http://127.0.0.1:5500">
 </head>
-<body style="background-color:rgb(49, 49, 49);" onload="pop_up();">
+<body style="background-color: rgb(49, 49, 49);" onload="pop_up();">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <nav class="navbar bg-body-tertiary">
@@ -58,7 +58,6 @@
                         <a class="nav-link" href="#">새소식</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <!-- 수정된 부분 -->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             고객지원
                         </a>
@@ -87,49 +86,26 @@
     <hr>
 
     <div style="display: flex; justify-content: center;">
-        <a href="index.html" target="_blank"><img src="image/E.png" class="img-fluid" alt="..." width="1908" height="1062"></a>
+        <a href="index.html" target="_blank"><img src="image/Vi.jpg" class="img-fluid" alt="..." width="1908" height="1062"></a>
     </div>
 
+        <div style="display: flex; justify-content: left;">
+            <img src="image/ViX.png" alt="Vi" width="840" height="945" onmouseover="overr(this)" onmouseout="outt(this)">
+            <h3 style="color: white;">
+            자운의 암흑가에서 범죄를 일삼던 다혈질 성격의 바이는 충동적이고 성급한 데다 권위에 대한 존중이라고는 눈곱만큼도 없다.
+            어릴 적부터 혼자 자라다시피 한 그녀는 생존 본능이 치열하고 유머감각은 사악할 만큼 냉소적이다.
+            하지만 이제 바이는 평화 유지를 위해 필트오버의 경찰 소속이 되어 육중한 벽을 단숨에 부술 만큼 무시무시한 마법공학 건틀릿을 휘두르며 범죄자를 색출하고 있다.
+            </h3>
+        </div>
+    </div>
+
+    <hr>
+
     <div style="display: flex; justify-content: center;">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Second</th>
-                    <th scope="col">Third</th>
-                    <th scope="col">Fourth</th>
-                    <th scope="col">Fifth</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr bgcolor="red">
-                    <th scope="row">1</th>
-                    <td width="80">사이온</td>
-                    <td>아리</td>
-                    <td>가렌</td>
-                    <td>가렌2</td>
-                    <td>가렌3</td>
-                </tr>
-                <tr bgcolor="grey">
-                    <th scope="row">2</th>
-                    <td colspan="5"><a href="https://www.leagueoflegends.com/ko-kr/how-to-play/" target="_blank"><h3 style="font-size: 24px; font-weight: bold; font-style: italic; color: purple; font-family: '고딕';">롤 웹사이트 접속하기</h3></a>
-                    </tr>
-                    <tr>
-                        <td bgcolor="blue"><b>카직스</b></td>
-                        <th scope="row">3</th>
-                        <td>루시안</td>
-                        <td>루시안2</td>
-                        <td><a href="login/Vi.html"><img src="image/B.jpg" class="img-fluid" width="100" height="50"></a></td>
-                        <td colspan="2"><font size="13">바이, 바이2</font></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <hr>
-        <div style="display: flex; justify-content: center;">
-            <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color: white; font-family: '굴림';">라이엇 게임 회사 정보 2024년 3월 작성됨</h3>
-        </div>
-    </body>
+        <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color: white; font-family: '굴림';">라이엇 게임 회사 정보 2024년 3월 작성됨</h3>
+    </div>
+</body>
 </html>
 
+
+    
