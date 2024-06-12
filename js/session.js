@@ -14,6 +14,7 @@ function session_set() { //세션 저장
 }
 
 */
+
 function session_set(){ //세션 저장(객체)    
     let id = document.querySelector("#typeEmailX");
     let password = document.querySelector("#typePasswordX");
@@ -66,3 +67,5 @@ function logout() {
 
 document.getElementById("logout_btn").addEventListener('click', logout);
     
+
+
